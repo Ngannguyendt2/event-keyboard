@@ -6,46 +6,7 @@
 </head>
 <body onload="docReady()">
 <img src="image/nobita.png" id="nobita" style="position: absolute;left: 100px;top:70px" height="100" width="200">
-<script>
-
-
-    function docReady() {
-        window.addEventListener('keydown', onKeydown);
-    }
-
-    function onKeydown(event) {
-        let element=document.getElementById("nobita");
-        let top=parseInt(element.style.top);
-        let left=parseInt(element.style.left);
-        if (event.which===38)
-        {
-
-            top-=50;
-            top+='px';
-            element.style.top=top;
-        }
-        if (event.which===40)
-        {
-
-            top+=50;
-            top+='px';
-            element.style.top=top;
-        }
-        if (event.which===37)
-        {
-
-            left-=50;
-            left+='px';
-            element.style.left=left;
-        }
-        if (event.which===39)
-        {
-
-            left+=50;
-            left+='px';
-            element.style.left=left;
-        }
-            }
-</script>
 </body>
+<script src="event.js"></script>
+
 </html>
